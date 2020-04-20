@@ -1,7 +1,7 @@
 from itertools import permutations
 
 
-f = open('wordlist.txt', 'r')
+f = open('/usr/share/dict/words', 'r')
 
 tmp = f.readlines()
 
@@ -10,7 +10,7 @@ for i in tmp:
   i.replace('\n', '')
   fullWordList.append(i.replace('\n', ''))
 
-#print(fullWordList)
+print(len(fullWordList))
   
 letterList = ['e', 'i', 'u', 'g', 'n', 'n', 'p']
 
